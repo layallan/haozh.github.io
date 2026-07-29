@@ -23,7 +23,10 @@
     h2 { margin:0 0 22px; font-size:1.8rem; letter-spacing:-.03em; } h3 { margin:0 0 6px; font-size:1.05rem; }
     .lead { max-width:800px; font-size:1.1rem; color:#35435a; }
     .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-    .card { border:1px solid var(--line); border-radius:12px; padding:22px; background:white; }
+    .card { border:1px solid var(--line); border-radius:14px; overflow:hidden; background:white; box-shadow:0 10px 28px rgba(20,33,61,.08); transition:transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform:translateY(-3px); box-shadow:0 16px 36px rgba(20,33,61,.14); }
+    .card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+    .card-body { padding:22px; }
     .card p { margin:6px 0 0; color:var(--muted); }
     .timeline { display:grid; gap:25px; max-width:880px; }.timeline p { margin:4px 0 0; color:var(--muted); }
     .label { color:var(--accent); font-size:.82rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
@@ -57,10 +60,10 @@
       <li><span class="news-date">2025</span>🎉 I received the FiO+LS Technical Group Poster Competition Award, the IEEE Photonics Society Graduate Student Scholarship, and the SPIE Optics and Photonics Scholarship.</li>
     </ul></div></section>
     <section id="research"><div class="wrap"><h2>Research directions</h2><div class="grid">
-      <article class="card"><h3>AI for Science</h3><p>Physical AI, digital twins, deep learning, reinforcement learning, multimodal AI, and agentic AI for scientific discovery.</p></article>
-      <article class="card"><h3>Ultrafast & Nonlinear Optics</h3><p>Optical waveform design, nonlinear frequency conversion, hollow-core fibers, and high-field light-matter interaction.</p></article>
-      <article class="card"><h3>Nanophotonics & Quantum Optics</h3><p>Metasurfaces, plasmonics, optical trapping, photonic circuits, and quantum interconnects.</p></article>
-      <article class="card"><h3>Accelerator Physics</h3><p>Laser shaping and source-level control for high-brightness electron beams and next-generation X-ray sources.</p></article>
+      <article class="card"><img src="images/research/ai-for-science.jpg" alt="Abstract visualization of AI integrated with physical science" loading="lazy"><div class="card-body"><h3>AI for Science</h3><p>Physical AI, digital twins, deep learning, reinforcement learning, multimodal AI, and agentic AI for scientific discovery.</p></div></article>
+      <article class="card"><img src="images/research/ultrafast-optics.jpg" alt="Ultrafast laser pulse propagating through a hollow-core optical fiber" loading="lazy"><div class="card-body"><h3>Ultrafast & Nonlinear Optics</h3><p>Optical waveform design, nonlinear frequency conversion, hollow-core fibers, and high-field light-matter interaction.</p></div></article>
+      <article class="card"><img src="images/research/nanophotonics.jpg" alt="Quantum emitter and photons interacting with a nanoscale metasurface" loading="lazy"><div class="card-body"><h3>Nanophotonics & Quantum Optics</h3><p>Metasurfaces, plasmonics, optical trapping, photonic circuits, and quantum interconnects.</p></div></article>
+      <article class="card"><img src="images/research/accelerator-physics.jpg" alt="Shaped laser pulse controlling a high-brightness electron beam" loading="lazy"><div class="card-body"><h3>Accelerator Physics</h3><p>Laser shaping and source-level control for high-brightness electron beams and next-generation X-ray sources.</p></div></article>
     </div></div></section>
     <section id="experience"><div class="wrap"><h2>Experience</h2><div class="timeline">
       <article><div class="label">2026-present</div><h3>Postdoctoral Researcher · UCLA</h3><p>Electrical and Computer Engineering.</p></article>
@@ -93,7 +96,7 @@
       <article><div class="label">2024 · SPIE Optics + Photonics & IPAC</div><h3>Two presentations</h3><p>Presentations on edge-ML X-ray diagnostics for LCLS-II and attosecond X-ray science through four-wave-mixing-driven photoemission.</p></article>
       <article><div class="label">2023 · Ultrafast Phenomena & SPIE Optics + Photonics</div><h3>Two presentations</h3><p>Work on integrated machine learning for advanced photoemission and accessible aperture-based optical tweezers for single-protein analysis.</p></article>
       <article><div class="label">2022 · SPIE Optical Trapping & NFO-16</div><h3>Three presentations</h3><p>Posters and an invited talk on nano-tweezers, quantum dots, and nanoplasmonic optical trapping.</p></article>
-    </div><button class="load-more" id="load-conferences" type="button" aria-expanded="false" aria-controls="conference-more">Load more conferences</button></div></section>
+    </div><button class="load-more" id="load-conferences" type="button" aria-expanded="false" aria-controls="conference-more">Load more</button></div></section>
     <section class="award"><div class="wrap"><h2>Selected recognition</h2><ul class="awards"><li>FiO+LS Technical Group Poster Competition Award, 2025</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul></div></section>
   </main>
   <footer><div class="wrap">© 2026 Hao Zhang · UCLA Electrical and Computer Engineering</div></footer>
@@ -104,7 +107,7 @@
       const isHidden = more.hasAttribute('hidden');
       more.toggleAttribute('hidden', !isHidden);
       button.setAttribute('aria-expanded', String(isHidden));
-      button.textContent = isHidden ? 'Show fewer conferences' : 'Load more conferences';
+      button.textContent = isHidden ? 'Show less' : 'Load more';
     });
   </script>
 </body>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hao Zhang - Postdoctoral researcher in AI for science, ultrafast optics, and accelerator physics.">
+  <title>Hao Zhang | Researcher</title>
+  <style>
+    :root { --ink:#14213d; --muted:#566074; --line:#dce2ec; --accent:#0b6e99; --wash:#f3f7fb; }
+    * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); font:16px/1.7 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+    .wrap { width:min(1080px, calc(100% - 40px)); margin:auto; }
+    header { background:linear-gradient(135deg,#102a43,#0b6e99); color:white; padding:82px 0 62px; }
+    nav { display:flex; justify-content:space-between; align-items:center; gap:24px; margin-bottom:70px; font-size:.9rem; }
+    nav a { color:white; opacity:.92; margin-left:18px; } nav a:first-child { margin-left:0; }
+    .brand { letter-spacing:.08em; font-weight:700; text-transform:uppercase; white-space:nowrap; }
+    .hero { max-width:760px; } h1 { font-size:clamp(2.8rem,7vw,5.4rem); line-height:1; margin:0 0 22px; letter-spacing:-.06em; }
+    .hero p { font-size:1.2rem; max-width:670px; opacity:.92; margin:0 0 28px; }
+    .contact a { display:inline-block; color:white; border:1px solid #8fc9df; border-radius:999px; padding:8px 15px; margin:5px 8px 0 0; font-size:.9rem; }
+    section { padding:68px 0; border-bottom:1px solid var(--line); } section:last-child { border:0; }
+    h2 { margin:0 0 22px; font-size:1.8rem; letter-spacing:-.03em; } h3 { margin:0 0 6px; font-size:1.05rem; }
+    .lead { max-width:800px; font-size:1.1rem; color:#35435a; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .card { border:1px solid var(--line); border-radius:12px; padding:22px; background:white; }
+    .card p { margin:6px 0 0; color:var(--muted); }
+    .timeline { display:grid; gap:25px; max-width:880px; }.timeline p { margin:4px 0 0; color:var(--muted); }
+    .label { color:var(--accent); font-size:.82rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
+    .pub { padding:18px 0; border-top:1px solid var(--line); }.pub:first-of-type { border-top:0; }.pub p { margin:4px 0 0; color:var(--muted); }
+    .award { background:var(--wash); }.awards { columns:2; padding-left:20px; margin:0; }.awards li { margin:8px 0; }
+    footer { padding:34px 0; color:var(--muted); font-size:.9rem; }
+    @media (max-width:650px) { header { padding-top:38px; } nav { display:block; margin-bottom:48px; } nav div:last-child { margin-top:12px; } nav a { margin-left:12px; } .grid { grid-template-columns:1fr; } .awards { columns:1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav><div class="brand">Hao Zhang</div><div><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a></div></nav>
+      <div class="hero">
+        <h1>Hao<br>Zhang</h1>
+        <p>Postdoctoral researcher advancing AI for science, ultrafast optics, and high-brightness electron and X-ray sources.</p>
+        <div class="contact"><a href="mailto:haozh@g.ucla.edu">Email</a><a href="https://github.com/layallan">GitHub</a></div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section><div class="wrap"><h2>About</h2><p class="lead">I am a postdoctoral researcher in Electrical and Computer Engineering at UCLA, working with the LCLS subgroup and the Laser Science Group at SLAC National Accelerator Laboratory. My work combines physics-guided machine learning, inverse design, nonlinear optics, and programmable laser shaping.</p></div></section>
+    <section id="research"><div class="wrap"><h2>Research directions</h2><div class="grid">
+      <article class="card"><h3>AI for Science</h3><p>Physical AI, digital twins, deep learning, reinforcement learning, multimodal AI, and agentic AI for scientific discovery.</p></article>
+      <article class="card"><h3>Ultrafast & Nonlinear Optics</h3><p>Optical waveform design, nonlinear frequency conversion, hollow-core fibers, and high-field light-matter interaction.</p></article>
+      <article class="card"><h3>Nanophotonics & Quantum Optics</h3><p>Metasurfaces, plasmonics, optical trapping, photonic circuits, and quantum interconnects.</p></article>
+      <article class="card"><h3>Accelerator Physics</h3><p>Laser shaping and source-level control for high-brightness electron beams and next-generation X-ray sources.</p></article>
+    </div></div></section>
+    <section id="experience"><div class="wrap"><h2>Experience</h2><div class="timeline">
+      <article><div class="label">2026-present</div><h3>Postdoctoral Researcher · UCLA</h3><p>Electrical and Computer Engineering.</p></article>
+      <article><div class="label">2022-present</div><h3>Visiting Physicist · SLAC National Accelerator Laboratory</h3><p>LCLS SRD Laser Science; LCLS-II photoinjector laser infrastructure, laser shaping, and light-source modeling.</p></article>
+      <article><div class="label">2023-2026</div><h3>PhD Researcher · UCLA</h3><p>Nonlinear optics, QED, machine learning, and inverse design for X-ray laser applications.</p></article>
+      <article><div class="label">2020-2022</div><h3>MASc Researcher · University of Victoria</h3><p>Nanoplasmonics, quantum optics, epsilon-near-zero materials, and optical trapping.</p></article>
+    </div></div></section>
+    <section id="publications"><div class="wrap"><h2>Selected publications</h2>
+      <article class="pub"><h3>Design, Prediction, and Optimization of Ultrafast Waveforms for Extreme Brightness Light Sources and Beyond</h3><p>H. Zhang. PhD thesis, UCLA, 2026.</p></article>
+      <article class="pub"><h3>Hybrid deep reconstruction for vignetting-free upconversion imaging through scattering in ENZ materials</h3><p>H. Zhang et al. <em>Light: Science & Applications</em>, 2026.</p></article>
+      <article class="pub"><h3>Universal quantum interconnects via phase-coherent four-wave mixing</h3><p>H. Zhang, Y. Xu, W. Cui, R. W. Boyd, and S. Carbajo. <em>Advanced Photonics Nexus</em>, 2026, in press.</p></article>
+      <article class="pub"><h3>Charged-particle control via spatio-temporally tailored pulses from gas-based nonlinear optics</h3><p>H. Zhang et al. <em>Optical Materials Express</em>, 2026.</p></article>
+      <article class="pub"><h3>Multi-modality deep learning for pulse prediction in homogeneous nonlinear systems via parametric conversion</h3><p>H. Zhang et al. <em>APL Photonics</em>, 2025.</p></article>
+    </div></section>
+    <section class="award"><div class="wrap"><h2>Selected recognition</h2><ul class="awards"><li>ECE Dissertation Year Award, 2026</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul></div></section>
+  </main>
+  <footer><div class="wrap">© 2026 Hao Zhang · UCLA Electrical and Computer Engineering</div></footer>
+</body>
+</html>

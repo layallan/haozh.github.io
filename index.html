@@ -15,7 +15,8 @@
     nav { display:flex; justify-content:space-between; align-items:center; gap:24px; margin-bottom:70px; font-size:.9rem; }
     nav a { color:white; opacity:.92; margin-left:18px; } nav a:first-child { margin-left:0; }
     .brand { letter-spacing:.08em; font-weight:700; text-transform:uppercase; white-space:nowrap; }
-    .hero { max-width:760px; } h1 { font-size:clamp(2.8rem,7vw,5.4rem); line-height:1; margin:0 0 22px; letter-spacing:-.06em; }
+    .hero { max-width:900px; display:flex; align-items:center; gap:38px; } .hero-copy { flex:1; } .portrait { width:170px; height:170px; border-radius:50%; object-fit:cover; border:5px solid rgba(255,255,255,.32); }
+    h1 { font-size:clamp(2.8rem,7vw,5.4rem); line-height:1; margin:0 0 22px; letter-spacing:-.06em; }
     .hero p { font-size:1.2rem; max-width:670px; opacity:.92; margin:0 0 28px; }
     .contact a { display:inline-block; color:white; border:1px solid #8fc9df; border-radius:999px; padding:8px 15px; margin:5px 8px 0 0; font-size:.9rem; }
     section { padding:68px 0; border-bottom:1px solid var(--line); } section:last-child { border:0; }
@@ -29,22 +30,28 @@
     .pub { padding:18px 0; border-top:1px solid var(--line); }.pub:first-of-type { border-top:0; }.pub p { margin:4px 0 0; color:var(--muted); }
     .award { background:var(--wash); }.awards { columns:2; padding-left:20px; margin:0; }.awards li { margin:8px 0; }
     footer { padding:34px 0; color:var(--muted); font-size:.9rem; }
-    @media (max-width:650px) { header { padding-top:38px; } nav { display:block; margin-bottom:48px; } nav div:last-child { margin-top:12px; } nav a { margin-left:12px; } .grid { grid-template-columns:1fr; } .awards { columns:1; } }
+    @media (max-width:650px) { header { padding-top:38px; } nav { display:block; margin-bottom:48px; } nav div:last-child { margin-top:12px; } nav a { margin-left:12px; } .hero { display:block; } .portrait { width:126px; height:126px; margin-top:24px; } .grid { grid-template-columns:1fr; } .awards { columns:1; } }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <nav><div class="brand">Hao Zhang</div><div><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a></div></nav>
+      <nav><div class="brand">Hao Zhang</div><div><a href="#news">News</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#conferences">Conferences</a></div></nav>
       <div class="hero">
-        <h1>Hao<br>Zhang</h1>
-        <p>Postdoctoral researcher advancing AI for science, ultrafast optics, and high-brightness electron and X-ray sources.</p>
-        <div class="contact"><a href="mailto:haozh@g.ucla.edu">Email</a><a href="https://github.com/layallan">GitHub</a></div>
+        <div class="hero-copy"><h1>Hao<br>Zhang</h1>
+        <p>Postdoctoral researcher and Lead of the LCLS subgroup at UCLA, advancing AI for science, ultrafast optics, and high-brightness electron and X-ray sources.</p>
+        <div class="contact"><a href="mailto:haozh@g.ucla.edu">Email</a><a href="https://www.linkedin.com/in/zhanghao27">LinkedIn</a><a href="https://github.com/layallan">GitHub</a></div></div>
+        <img class="portrait" src="icon.jpeg" alt="Portrait of Hao Zhang">
       </div>
     </div>
   </header>
   <main>
-    <section><div class="wrap"><h2>About</h2><p class="lead">I am a postdoctoral researcher in Electrical and Computer Engineering at UCLA, working with the LCLS subgroup and the Laser Science Group at SLAC National Accelerator Laboratory. My work combines physics-guided machine learning, inverse design, nonlinear optics, and programmable laser shaping.</p></div></section>
+    <section><div class="wrap"><h2>About</h2><p class="lead">I am a postdoctoral researcher in Electrical and Computer Engineering at UCLA and lead the LCLS subgroup. I work closely with the Laser Science Group at SLAC National Accelerator Laboratory. My work combines physics-guided machine learning, inverse design, nonlinear optics, and programmable laser shaping.</p></div></section>
+    <section id="news" class="award"><div class="wrap"><h2>News</h2><div class="timeline">
+      <article><div class="label">2026</div><h3>New publications in Advanced Photonics and Light: Science & Applications</h3><p>Our work on deep learning-assisted nonlinear optics and scattering-resilient upconversion imaging has appeared in leading photonics journals.</p></article>
+      <article><div class="label">2026</div><h3>Invited talk at OPTICA Advanced Photonics Congress</h3><p>I will give the invited talk, <em>“Optical Shaping Meets Machine Learning,”</em> at the 2026 Advanced Photonics Congress.</p></article>
+      <article><div class="label">2026</div><h3>Eleven conference contributions across major optics and accelerator meetings</h3><p>Our group will present five talks, including one invited talk, and six posters at Advanced Photonics Congress, FiO+LS, LINAC, and CLEO.</p></article>
+    </div></div></section>
     <section id="research"><div class="wrap"><h2>Research directions</h2><div class="grid">
       <article class="card"><h3>AI for Science</h3><p>Physical AI, digital twins, deep learning, reinforcement learning, multimodal AI, and agentic AI for scientific discovery.</p></article>
       <article class="card"><h3>Ultrafast & Nonlinear Optics</h3><p>Optical waveform design, nonlinear frequency conversion, hollow-core fibers, and high-field light-matter interaction.</p></article>
@@ -54,7 +61,7 @@
     <section id="experience"><div class="wrap"><h2>Experience</h2><div class="timeline">
       <article><div class="label">2026-present</div><h3>Postdoctoral Researcher · UCLA</h3><p>Electrical and Computer Engineering.</p></article>
       <article><div class="label">2022-present</div><h3>Visiting Physicist · SLAC National Accelerator Laboratory</h3><p>LCLS SRD Laser Science; LCLS-II photoinjector laser infrastructure, laser shaping, and light-source modeling.</p></article>
-      <article><div class="label">2023-2026</div><h3>PhD Researcher · UCLA</h3><p>Nonlinear optics, QED, machine learning, and inverse design for X-ray laser applications.</p></article>
+      <article><div class="label">2023-2026</div><h3>PhD Researcher and LCLS Subgroup Lead · UCLA</h3><p>Nonlinear optics, QED, machine learning, and inverse design for X-ray laser applications.</p></article>
       <article><div class="label">2020-2022</div><h3>MASc Researcher · University of Victoria</h3><p>Nanoplasmonics, quantum optics, epsilon-near-zero materials, and optical trapping.</p></article>
     </div></div></section>
     <section id="publications"><div class="wrap"><h2>Selected publications</h2>
@@ -63,8 +70,17 @@
       <article class="pub"><h3>Universal quantum interconnects via phase-coherent four-wave mixing</h3><p>H. Zhang, Y. Xu, W. Cui, R. W. Boyd, and S. Carbajo. <em>Advanced Photonics Nexus</em>, 2026, in press.</p></article>
       <article class="pub"><h3>Charged-particle control via spatio-temporally tailored pulses from gas-based nonlinear optics</h3><p>H. Zhang et al. <em>Optical Materials Express</em>, 2026.</p></article>
       <article class="pub"><h3>Multi-modality deep learning for pulse prediction in homogeneous nonlinear systems via parametric conversion</h3><p>H. Zhang et al. <em>APL Photonics</em>, 2025.</p></article>
+      <article class="pub"><h3>Accurate label-free classification of cancerous extracellular vesicles using nanoaperture optical tweezers and deep learning</h3><p>H. Zhang et al. <em>npj Biosensing</em>, 2025.</p></article>
+      <article class="pub"><h3>Optimizing spectral phase transfer in four-wave mixing with gas-filled capillaries</h3><p>H. Zhang et al. <em>Optics Express</em>, 2024.</p></article>
+      <article class="pub"><h3>The LCLS-II photoinjector laser infrastructure</h3><p>H. Zhang et al. <em>High Power Laser Science and Engineering</em>, 2024. Cover Feature & Editor’s Pick.</p></article>
     </div></section>
-    <section class="award"><div class="wrap"><h2>Selected recognition</h2><ul class="awards"><li>ECE Dissertation Year Award, 2026</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul></div></section>
+    <section id="conferences"><div class="wrap"><h2>Selected conferences & presentations</h2><div class="timeline">
+      <article><div class="label">2026 · OPTICA Advanced Photonics Congress</div><h3>Three presentations</h3><p>Invited talk: <em>Optical Shaping Meets Machine Learning</em>; oral presentation: <em>Laser-Assisted Longitudinal Shaping of Relativistic Electron Beams</em>; and poster: <em>Physics-Guided Optical Shaping for High-Brightness Photoemission</em>.</p></article>
+      <article><div class="label">2026 · Frontiers in Optics + Laser Science</div><h3>Three poster presentations</h3><p>Topics include ENZ upconversion imaging, machine-learning-controlled OAM entanglement, and spectral-phase transfer in gas-filled hollow-core fibers.</p></article>
+      <article><div class="label">2026 · LINAC and CLEO</div><h3>Five presentations</h3><p>Talks and posters on source-level laser control at LCLS-II, longitudinal control of relativistic electrons, adaptive XFEL operation, and nonlinear laser shaping.</p></article>
+      <article><div class="label">2025 · Selected meetings</div><h3>Advanced optics and accelerator science</h3><p>Presentations at SPIE Photonics West, CLEO, FiO+LS, Ultrafast Optics XIV, Optica Nonlinear Optics, and the APS Global Physics Summit.</p></article>
+    </div></div></section>
+    <section class="award"><div class="wrap"><h2>Selected recognition</h2><ul class="awards"><li>FiO+LS Technical Group Poster Competition Award, 2025</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul></div></section>
   </main>
   <footer><div class="wrap">© 2026 Hao Zhang · UCLA Electrical and Computer Engineering</div></footer>
 </body>

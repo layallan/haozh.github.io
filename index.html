@@ -28,6 +28,7 @@
     .timeline { display:grid; gap:25px; max-width:880px; }.timeline p { margin:4px 0 0; color:var(--muted); }
     .label { color:var(--accent); font-size:.82rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; }
     .pub { padding:18px 0; border-top:1px solid var(--line); }.pub:first-of-type { border-top:0; }.pub p { margin:4px 0 0; color:var(--muted); }
+    .news-list { list-style:none; padding:0; margin:0; max-width:900px; }.news-list li { padding:13px 0; border-top:1px solid var(--line); color:#35435a; }.news-list li:first-child { border-top:0; }.news-date { display:inline-block; min-width:90px; color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums; }
     .award { background:var(--wash); }.awards { columns:2; padding-left:20px; margin:0; }.awards li { margin:8px 0; }
     footer { padding:34px 0; color:var(--muted); font-size:.9rem; }
     @media (max-width:650px) { header { padding-top:38px; } nav { display:block; margin-bottom:48px; } nav div:last-child { margin-top:12px; } nav a { margin-left:12px; } .hero { display:block; } .portrait { width:126px; height:126px; margin-top:24px; } .grid { grid-template-columns:1fr; } .awards { columns:1; } }
@@ -47,11 +48,13 @@
   </header>
   <main>
     <section><div class="wrap"><h2>About</h2><p class="lead">I am a postdoctoral researcher in Electrical and Computer Engineering at UCLA and lead the LCLS subgroup. I work closely with the Laser Science Group at SLAC National Accelerator Laboratory. My work combines physics-guided machine learning, inverse design, nonlinear optics, and programmable laser shaping.</p></div></section>
-    <section id="news" class="award"><div class="wrap"><h2>News</h2><div class="timeline">
-      <article><div class="label">2026</div><h3>New publications in Advanced Photonics and Light: Science & Applications</h3><p>Our work on deep learning-assisted nonlinear optics and scattering-resilient upconversion imaging has appeared in leading photonics journals.</p></article>
-      <article><div class="label">2026</div><h3>Invited talk at OPTICA Advanced Photonics Congress</h3><p>I will give the invited talk, <em>“Optical Shaping Meets Machine Learning,”</em> at the 2026 Advanced Photonics Congress.</p></article>
-      <article><div class="label">2026</div><h3>Eleven conference contributions across major optics and accelerator meetings</h3><p>Our group will present five talks, including one invited talk, and six posters at Advanced Photonics Congress, FiO+LS, LINAC, and CLEO.</p></article>
-    </div></div></section>
+    <section id="news" class="award"><div class="wrap"><h2>News</h2><ul class="news-list">
+      <li><span class="news-date">2026</span>🎉 Our work on deep learning-assisted modeling for chi(2) nonlinear optics has been published in <em>Advanced Photonics</em>.</li>
+      <li><span class="news-date">2026</span>🎉 Our paper on vignetting-free upconversion imaging through scattering in ENZ materials has been published in <em>Light: Science &amp; Applications</em>.</li>
+      <li><span class="news-date">2026</span>🎉 I will give an invited talk, <em>“Optical Shaping Meets Machine Learning,”</em> at OPTICA Advanced Photonics Congress.</li>
+      <li><span class="news-date">2026</span>🎉 Our group will present 11 contributions - five talks, including one invited talk, and six posters - at Advanced Photonics Congress, FiO+LS, LINAC, and CLEO.</li>
+      <li><span class="news-date">2025</span>🎉 I received the FiO+LS Technical Group Poster Competition Award, the IEEE Photonics Society Graduate Student Scholarship, and the SPIE Optics and Photonics Scholarship.</li>
+    </ul></div></section>
     <section id="research"><div class="wrap"><h2>Research directions</h2><div class="grid">
       <article class="card"><h3>AI for Science</h3><p>Physical AI, digital twins, deep learning, reinforcement learning, multimodal AI, and agentic AI for scientific discovery.</p></article>
       <article class="card"><h3>Ultrafast & Nonlinear Optics</h3><p>Optical waveform design, nonlinear frequency conversion, hollow-core fibers, and high-field light-matter interaction.</p></article>

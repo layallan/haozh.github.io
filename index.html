@@ -75,7 +75,6 @@
       <article><div class="label">2020-2022</div><h3>MASc Researcher · University of Victoria</h3><p>Nanoplasmonics, quantum optics, epsilon-near-zero materials, and optical trapping.</p></article>
     </div></div></section>
     <section id="publications"><div class="wrap"><h2>Selected publications</h2>
-      <article class="pub"><h3>Design, Prediction, and Optimization of Ultrafast Waveforms for Extreme Brightness Light Sources and Beyond</h3><p>H. Zhang. PhD thesis, UCLA, 2026.</p></article>
       <article class="pub"><h3>Hybrid deep reconstruction for vignetting-free upconversion imaging through scattering in ENZ materials</h3><p>H. Zhang et al. <em>Light: Science & Applications</em>, 2026.</p></article>
       <article class="pub"><h3>Universal quantum interconnects via phase-coherent four-wave mixing</h3><p>H. Zhang, Y. Xu, W. Cui, R. W. Boyd, and S. Carbajo. <em>Advanced Photonics Nexus</em>, 2026, in press.</p></article>
       <article class="pub"><h3>Charged-particle control via spatio-temporally tailored pulses from gas-based nonlinear optics</h3><p>H. Zhang et al. <em>Optical Materials Express</em>, 2026.</p></article>
@@ -100,18 +99,26 @@
       <article><div class="label">2023 · Ultrafast Phenomena & SPIE Optics + Photonics</div><h3>Two presentations</h3><p>Work on integrated machine learning for advanced photoemission and accessible aperture-based optical tweezers for single-protein analysis.</p></article>
       <article><div class="label">2022 · SPIE Optical Trapping & NFO-16</div><h3>Three presentations</h3><p>Posters and an invited talk on nano-tweezers, quantum dots, and nanoplasmonic optical trapping.</p></article>
     </div><button class="load-more" id="load-conferences" type="button" aria-expanded="false" aria-controls="conference-more">Load more</button></div></section>
-    <section class="award"><div class="wrap"><h2>Selected recognition</h2><ul class="awards"><li>FiO+LS Technical Group Poster Competition Award, 2025</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul></div></section>
+    <section class="award"><div class="wrap"><h2>Selected recognition</h2>
+      <ul class="awards"><li>FiO+LS Technical Group Poster Competition Award, 2025</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul>
+      <ul id="recognition-more" class="awards more-items" hidden><li>US Particle Accelerator School Scholarship, 2025</li><li>Best Student Paper Award, CLEO-APS Division of Laser Science Competition (3rd place), 2025</li><li>Optica Siegman International School on Lasers Participation Invitation, 2024</li><li>SPIE Optics + Photonics Education Travel Scholarship, 2023</li><li>PSC Tingye Li Memorial Scholarship Finalist, 2023</li><li>NSERC CREATE Quantum Computing Program Scholarship, 2021-2023</li><li>UCLA Henry and Susan Samueli Fellowship in Electrical Engineering, 2023-2024</li><li>University of Victoria CAMTEC Breakthrough of the Month Award, 2022</li><li>University of Victoria Excellent Graduate Award, 2021-2022</li><li>China College Students Integrated Circuit Competition: North Region Top 1 of 140 and National Final Second Prize, 2019</li></ul>
+      <button class="load-more" id="load-recognition" type="button" aria-expanded="false" aria-controls="recognition-more">Load more</button>
+    </div></section>
   </main>
   <footer><div class="wrap">© 2026 Hao Zhang · UCLA Electrical and Computer Engineering<span class="image-credit">Images created with ChatGPT.</span></div></footer>
   <script>
-    const button = document.getElementById('load-conferences');
-    const more = document.getElementById('conference-more');
-    button.addEventListener('click', () => {
-      const isHidden = more.hasAttribute('hidden');
-      more.toggleAttribute('hidden', !isHidden);
-      button.setAttribute('aria-expanded', String(isHidden));
-      button.textContent = isHidden ? 'Show less' : 'Load more';
-    });
+    function setupLoadMore(buttonId, contentId) {
+      const button = document.getElementById(buttonId);
+      const content = document.getElementById(contentId);
+      button.addEventListener('click', () => {
+        const isHidden = content.hasAttribute('hidden');
+        content.toggleAttribute('hidden', !isHidden);
+        button.setAttribute('aria-expanded', String(isHidden));
+        button.textContent = isHidden ? 'Show less' : 'Load more';
+      });
+    }
+    setupLoadMore('load-conferences', 'conference-more');
+    setupLoadMore('load-recognition', 'recognition-more');
   </script>
 </body>
 </html>

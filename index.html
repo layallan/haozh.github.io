@@ -25,7 +25,7 @@
     .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
     .card { border:1px solid var(--line); border-radius:14px; overflow:hidden; background:white; box-shadow:0 10px 28px rgba(20,33,61,.08); transition:transform .2s ease, box-shadow .2s ease; }
     .card:hover { transform:translateY(-3px); box-shadow:0 16px 36px rgba(20,33,61,.14); }
-    .card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+    .card img { width:100%; height:190px; object-fit:cover; display:block; }
     .card-body { padding:22px; }
     .card p { margin:6px 0 0; color:var(--muted); }
     .timeline { display:grid; gap:25px; max-width:880px; }.timeline p { margin:4px 0 0; color:var(--muted); }
@@ -34,8 +34,8 @@
     .news-list { list-style:none; padding:0; margin:0; max-width:900px; }.news-list li { padding:13px 0; border-top:1px solid var(--line); color:#35435a; }.news-list li:first-child { border-top:0; }.news-date { display:inline-block; min-width:90px; color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums; }
     .award { background:var(--wash); }.awards { columns:2; padding-left:20px; margin:0; }.awards li { margin:8px 0; }
     .more-items[hidden] { display:none; }.load-more { margin-top:26px; color:var(--accent); background:white; border:1px solid var(--accent); border-radius:999px; padding:9px 17px; font:inherit; font-weight:700; cursor:pointer; }.load-more:hover { background:var(--wash); }
-    footer { padding:34px 0; color:var(--muted); font-size:.9rem; }
-    @media (max-width:650px) { header { padding-top:38px; } nav { display:block; margin-bottom:48px; } nav div:last-child { margin-top:12px; } nav a { margin-left:12px; } .hero { display:block; } .portrait { width:126px; height:126px; margin-top:24px; } .grid { grid-template-columns:1fr; } .awards { columns:1; } }
+    footer { padding:34px 0; color:var(--muted); font-size:.9rem; }.image-credit { display:block; margin-top:4px; font-size:.76rem; opacity:.72; }
+    @media (max-width:650px) { header { padding-top:38px; } nav { display:block; margin-bottom:48px; } nav div:last-child { margin-top:12px; } nav a { margin-left:12px; } .hero { display:block; } .portrait { width:126px; height:126px; margin-top:24px; } .grid { grid-template-columns:1fr; } .card img { height:160px; } .awards { columns:1; } }
   </style>
 </head>
 <body>
@@ -60,10 +60,10 @@
       <li><span class="news-date">2025</span>🎉 I received the FiO+LS Technical Group Poster Competition Award, the IEEE Photonics Society Graduate Student Scholarship, and the SPIE Optics and Photonics Scholarship.</li>
     </ul></div></section>
     <section id="research"><div class="wrap"><h2>Research directions</h2><div class="grid">
-      <article class="card"><img src="images/research/ai-for-science.jpg" alt="Abstract visualization of AI integrated with physical science" loading="lazy"><div class="card-body"><h3>AI for Science</h3><p>Physical AI, digital twins, deep learning, reinforcement learning, multimodal AI, and agentic AI for scientific discovery.</p></div></article>
-      <article class="card"><img src="images/research/ultrafast-optics.jpg" alt="Ultrafast laser pulse propagating through a hollow-core optical fiber" loading="lazy"><div class="card-body"><h3>Ultrafast & Nonlinear Optics</h3><p>Optical waveform design, nonlinear frequency conversion, hollow-core fibers, and high-field light-matter interaction.</p></div></article>
-      <article class="card"><img src="images/research/nanophotonics.jpg" alt="Quantum emitter and photons interacting with a nanoscale metasurface" loading="lazy"><div class="card-body"><h3>Nanophotonics & Quantum Optics</h3><p>Metasurfaces, plasmonics, optical trapping, photonic circuits, and quantum interconnects.</p></div></article>
-      <article class="card"><img src="images/research/accelerator-physics.jpg" alt="Shaped laser pulse controlling a high-brightness electron beam" loading="lazy"><div class="card-body"><h3>Accelerator Physics</h3><p>Laser shaping and source-level control for high-brightness electron beams and next-generation X-ray sources.</p></div></article>
+      <article class="card"><img src="/haozh.github.io/images/research/ai-for-science.jpg?v=2" alt="Abstract visualization of AI integrated with physical science"><div class="card-body"><h3>AI for Science</h3><p>Physical AI, digital twins, deep learning, reinforcement learning, multimodal AI, and agentic AI for scientific discovery.</p></div></article>
+      <article class="card"><img src="/haozh.github.io/images/research/ultrafast-optics.jpg?v=2" alt="Ultrafast laser pulse propagating through a hollow-core optical fiber"><div class="card-body"><h3>Ultrafast & Nonlinear Optics</h3><p>Optical waveform design, nonlinear frequency conversion, hollow-core fibers, and high-field light-matter interaction.</p></div></article>
+      <article class="card"><img src="/haozh.github.io/images/research/nanophotonics.jpg?v=2" alt="Quantum emitter and photons interacting with a nanoscale metasurface"><div class="card-body"><h3>Nanophotonics & Quantum Optics</h3><p>Metasurfaces, plasmonics, optical trapping, photonic circuits, and quantum interconnects.</p></div></article>
+      <article class="card"><img src="/haozh.github.io/images/research/accelerator-physics.jpg?v=2" alt="Shaped laser pulse controlling a high-brightness electron beam"><div class="card-body"><h3>Accelerator Physics</h3><p>Laser shaping and source-level control for high-brightness electron beams and next-generation X-ray sources.</p></div></article>
     </div></div></section>
     <section id="experience"><div class="wrap"><h2>Experience</h2><div class="timeline">
       <article><div class="label">2026-present</div><h3>Postdoctoral Researcher · UCLA</h3><p>Electrical and Computer Engineering.</p></article>
@@ -99,7 +99,7 @@
     </div><button class="load-more" id="load-conferences" type="button" aria-expanded="false" aria-controls="conference-more">Load more</button></div></section>
     <section class="award"><div class="wrap"><h2>Selected recognition</h2><ul class="awards"><li>FiO+LS Technical Group Poster Competition Award, 2025</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul></div></section>
   </main>
-  <footer><div class="wrap">© 2026 Hao Zhang · UCLA Electrical and Computer Engineering</div></footer>
+  <footer><div class="wrap">© 2026 Hao Zhang · UCLA Electrical and Computer Engineering<span class="image-credit">Images created with ChatGPT.</span></div></footer>
   <script>
     const button = document.getElementById('load-conferences');
     const more = document.getElementById('conference-more');

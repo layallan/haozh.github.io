@@ -1,12 +1,5 @@
 source 'https://rubygems.org'
 
-group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
-  gem 'jemoji'
-  gem 'webrick', '~> 1.8'
-end
-
-gem 'github-pages'
+# GitHub Pages supplies Jekyll and its supported plugins. Keeping this list
+# minimal prevents local version pins from conflicting with its build image.
+gem 'github-pages', group: :jekyll_plugins

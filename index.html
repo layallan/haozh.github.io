@@ -30,6 +30,7 @@
     .pub { padding:18px 0; border-top:1px solid var(--line); }.pub:first-of-type { border-top:0; }.pub p { margin:4px 0 0; color:var(--muted); }
     .news-list { list-style:none; padding:0; margin:0; max-width:900px; }.news-list li { padding:13px 0; border-top:1px solid var(--line); color:#35435a; }.news-list li:first-child { border-top:0; }.news-date { display:inline-block; min-width:90px; color:var(--accent); font-weight:700; font-variant-numeric:tabular-nums; }
     .award { background:var(--wash); }.awards { columns:2; padding-left:20px; margin:0; }.awards li { margin:8px 0; }
+    .more-items[hidden] { display:none; }.load-more { margin-top:26px; color:var(--accent); background:white; border:1px solid var(--accent); border-radius:999px; padding:9px 17px; font:inherit; font-weight:700; cursor:pointer; }.load-more:hover { background:var(--wash); }
     footer { padding:34px 0; color:var(--muted); font-size:.9rem; }
     @media (max-width:650px) { header { padding-top:38px; } nav { display:block; margin-bottom:48px; } nav div:last-child { margin-top:12px; } nav a { margin-left:12px; } .hero { display:block; } .portrait { width:126px; height:126px; margin-top:24px; } .grid { grid-template-columns:1fr; } .awards { columns:1; } }
   </style>
@@ -77,14 +78,34 @@
       <article class="pub"><h3>Optimizing spectral phase transfer in four-wave mixing with gas-filled capillaries</h3><p>H. Zhang et al. <em>Optics Express</em>, 2024.</p></article>
       <article class="pub"><h3>The LCLS-II photoinjector laser infrastructure</h3><p>H. Zhang et al. <em>High Power Laser Science and Engineering</em>, 2024. Cover Feature & Editor’s Pick.</p></article>
     </div></section>
-    <section id="conferences"><div class="wrap"><h2>Selected conferences & presentations</h2><div class="timeline">
-      <article><div class="label">2026 · OPTICA Advanced Photonics Congress</div><h3>Three presentations</h3><p>Invited talk: <em>Optical Shaping Meets Machine Learning</em>; oral presentation: <em>Laser-Assisted Longitudinal Shaping of Relativistic Electron Beams</em>; and poster: <em>Physics-Guided Optical Shaping for High-Brightness Photoemission</em>.</p></article>
-      <article><div class="label">2026 · Frontiers in Optics + Laser Science</div><h3>Three poster presentations</h3><p>Topics include ENZ upconversion imaging, machine-learning-controlled OAM entanglement, and spectral-phase transfer in gas-filled hollow-core fibers.</p></article>
-      <article><div class="label">2026 · LINAC and CLEO</div><h3>Five presentations</h3><p>Talks and posters on source-level laser control at LCLS-II, longitudinal control of relativistic electrons, adaptive XFEL operation, and nonlinear laser shaping.</p></article>
-      <article><div class="label">2025 · Selected meetings</div><h3>Advanced optics and accelerator science</h3><p>Presentations at SPIE Photonics West, CLEO, FiO+LS, Ultrafast Optics XIV, Optica Nonlinear Optics, and the APS Global Physics Summit.</p></article>
-    </div></div></section>
+    <section id="conferences"><div class="wrap"><h2>Conferences & presentations</h2><div class="timeline">
+      <article><div class="label">2026 · OPTICA Advanced Photonics Congress</div><h3>Three presentations</h3><p>Invited talk: <em>Optical Shaping Meets Machine Learning</em>; oral presentation: <em>Laser-Assisted Longitudinal Shaping of Relativistic Electron Beams</em>; poster: <em>Physics-Guided Optical Shaping for High-Brightness Photoemission</em>.</p></article>
+      <article><div class="label">2026 · Frontiers in Optics + Laser Science (FiO+LS)</div><h3>Three poster presentations</h3><p><em>Simultaneous Characterization of Two Ultrashort Pulses with Near-Zero-Index Material</em>; <em>Hybrid Deep Learning for Robust Upconversion Imaging within ENZ Environments</em>; and <em>Adaptive Pump Modulation for OAM Entanglement via Machine Learning</em>.</p></article>
+      <article><div class="label">2026 · 33rd Linear Accelerator Conference (LINAC)</div><h3>Two presentations</h3><p>Oral presentation: <em>Upstream Photocathode Laser Tailoring for Optimized Longitudinal Phase Space in High-Brightness FELs</em>; poster: <em>Source-Level Laser Control for Tailored X-ray Pulses at LCLS-II</em>.</p></article>
+      <article><div class="label">2026 · Conference on Lasers and Electro-Optics (CLEO)</div><h3>Three presentations</h3><p>Talks and posters on enhanced longitudinal control of relativistic electrons, scattering-resilient ENZ imaging, and on-the-fly laser shaping for adaptive XFEL operation.</p></article>
+    </div><div id="conference-more" class="timeline more-items" hidden>
+      <article><div class="label">2025 · SPIE Photonics West</div><h3>Three presentations</h3><p>Adaptive laser shaping for ultrafast electron and X-ray instrumentation; digital twins of high-power laser systems; and shaped-UV photoemission control.</p></article>
+      <article><div class="label">2025 · Frontiers in Optics + Laser Science</div><h3>Two oral presentations</h3><p><em>Photoinjector Drive Laser System for LCLS-II</em> and <em>Leveraging the Capabilities of LCLS-II</em>.</p></article>
+      <article><div class="label">2025 · Optica Nonlinear Optics Topical Meeting</div><h3>Three presentations</h3><p>Work on spectral-phase transfer, indirect ultraviolet pulse shaping, and digital-twin surrogates for ultrafast optics.</p></article>
+      <article><div class="label">2025 · Ultrafast Optics XIV</div><h3>Three presentations</h3><p>Talks and posters on optimized ultrafast photoemission, UV pulse shaping, and deep-learning-enhanced optical trapping dynamics.</p></article>
+      <article><div class="label">2025 · CLEO & APS Global Physics Summit</div><h3>Seven presentations</h3><p>Topics spanning LCLS-II photoinjector lasers, four-wave mixing, digital twins, ultrafast nonlinear optics, and programmable electron-source control.</p></article>
+      <article><div class="label">2024 · Advanced Solid State Lasers & Siegman International School on Lasers</div><h3>Two presentations</h3><p>Poster presentations on gas-filled-fiber upconversion and photonic accelerator design for vector-matrix multiplication.</p></article>
+      <article><div class="label">2024 · SPIE Optics + Photonics & IPAC</div><h3>Two presentations</h3><p>Presentations on edge-ML X-ray diagnostics for LCLS-II and attosecond X-ray science through four-wave-mixing-driven photoemission.</p></article>
+      <article><div class="label">2023 · Ultrafast Phenomena & SPIE Optics + Photonics</div><h3>Two presentations</h3><p>Work on integrated machine learning for advanced photoemission and accessible aperture-based optical tweezers for single-protein analysis.</p></article>
+      <article><div class="label">2022 · SPIE Optical Trapping & NFO-16</div><h3>Three presentations</h3><p>Posters and an invited talk on nano-tweezers, quantum dots, and nanoplasmonic optical trapping.</p></article>
+    </div><button class="load-more" id="load-conferences" type="button" aria-expanded="false" aria-controls="conference-more">Load more conferences</button></div></section>
     <section class="award"><div class="wrap"><h2>Selected recognition</h2><ul class="awards"><li>FiO+LS Technical Group Poster Competition Award, 2025</li><li>IEEE Photonics Society Graduate Student Scholarship, 2025</li><li>SPIE Optics and Photonics Scholarship, 2025</li><li>Best Student Paper Award, Optica Laser Congress / ASSL, 2024</li></ul></div></section>
   </main>
   <footer><div class="wrap">© 2026 Hao Zhang · UCLA Electrical and Computer Engineering</div></footer>
+  <script>
+    const button = document.getElementById('load-conferences');
+    const more = document.getElementById('conference-more');
+    button.addEventListener('click', () => {
+      const isHidden = more.hasAttribute('hidden');
+      more.toggleAttribute('hidden', !isHidden);
+      button.setAttribute('aria-expanded', String(isHidden));
+      button.textContent = isHidden ? 'Show fewer conferences' : 'Load more conferences';
+    });
+  </script>
 </body>
 </html>

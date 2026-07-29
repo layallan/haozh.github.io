@@ -166,6 +166,11 @@ include:
   - _pages
   - files
 exclude:
+  - _posts
+  - _talks
+  - _teaching
+  - _portfolio
+  - markdown_generator
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

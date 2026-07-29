@@ -7,8 +7,6 @@ redirect_from:
   - /resume
 ---
 
-<a class="btn btn--primary" href="/files/Hao_CV_2026.pdf">Download CV (PDF)</a>
-
 Education
 ======
 
